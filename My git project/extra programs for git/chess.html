@@ -1,0 +1,445 @@
+
+<html>
+<title>Chess</title>
+
+<head>
+    <style>
+        .chessboard {
+            border-width: 50px;
+            border: solid#FFFFFF;
+            position: absolute;
+            left: 10px;
+            top: 40px;
+            right: 40px;
+            width: 850px;
+            height: 820px;
+            padding: 20px;
+        }
+
+        .chesssquare1 {
+            position: absolute;
+            left: 60px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare2 {
+            position: absolute;
+            left: 170px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare3 {
+            position: absolute;
+            left: 280px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare4 {
+            position: absolute;
+            left: 390px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare5 {
+            position: absolute;
+            left: 500px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare6 {
+            position: absolute;
+            left: 610px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare7 {
+            position: absolute;
+            left: 730px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare8 {
+            position: absolute;
+            left: 840px;
+
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare9 {
+            position: absolute;
+            left: 60px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare10 {
+            position: absolute;
+            left: 170px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare11 {
+            position: absolute;
+            left: 280px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare12 {
+            position: absolute;
+            left: 390px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare13 {
+            position: absolute;
+            left: 500px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare14 {
+            position: absolute;
+            left: 610px;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare15 {
+            position: absolute;
+            left: 730px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .chesssquare16 {
+            position: absolute;
+            left: 840px;
+
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+        }
+
+        .rookblack1 {
+            position: absolute;
+            left: 6px;
+            height: 80px;
+            width: 50px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+            color: brown;
+            background-color: black;
+cursor:pointer;
+display:inline-block;
+        }
+
+        .knightblackone {
+            position: absolute;
+            left: 6px;
+            height: 100px;
+            width: 30px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+            color: brown;
+            background-color: black;
+cursor:move;
+display:inline-block;
+        }
+
+        .piecelargewhiteone {
+            left: 6px;
+            height: 80px;
+            width: 50px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+            color: green;
+            background-color: white;
+cursor:move;
+display:inline-block;
+        }
+
+        .white2 {
+            position: absolute;
+            left: 6px;
+            height: 100px;
+            width: 30px;
+            background-color: white;
+            border-width: 60px;
+            border: 10px solid;
+            color: green;
+cursor:pointer;
+display:inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chessboard"></div>
+    <div class="chesssquare1">
+        <div class="rookblack1">
+            <h1>R</h1>
+        </div>
+    </div>
+    <div class="chesssquare2">
+        <div class="rookblack1">
+            <h1>Kn</h1>
+        </div>
+    </div>
+    <div class="chesssquare3">
+        <div class="rookblack1">
+            <h1>B</h1>
+        </div>
+    </div>
+    <div class="chesssquare4">
+        <div class="rookblack1">
+            <h1>Q</h1>
+        </div>
+    </div>
+    <div class="chesssquare5">
+        <div class="rookblack1">
+            <h1>K</h1>
+        </div>
+    </div>
+    <div class="chesssquare6">
+        <div class="rookblack1">
+            <h1>B</h1>
+        </div>
+    </div>
+    <div class="chesssquare7">
+        <div class="rookblack1">
+            <h1>Kn</h1>
+        </div>
+    </div>
+    <div class="chesssquare8">
+        <div class="rookblack1">
+            <h1>R</h1>
+        </div>
+    </div><br>
+    <Br><br><br>
+    <Br><br>
+    <div class="chesssquare9">
+        <div class="knightblackone">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare10">
+        <div class="knightblackone">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare11">
+        <div class="knightblackone">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare12">
+        <div class="knightblackone">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare13">
+        <div class="knightblackone">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare14">
+        <div class="knightblackone">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare15">
+        <div class="knightblackone">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare16">
+        <div class="knightblackone">
+            <h1>P</h1>
+        </div>
+    </div><br><br><br><br><br><br>
+    <div class="chesssquare1"></div>
+    <div class="chesssquare2"></div>
+    <div class="chesssquare3"></div>
+    <div class="chesssquare4"></div>
+    <div class="chesssquare5"></div>
+    <div class="chesssquare6"></div>
+    <div class="chesssquare7"></div>
+    <div class="chesssquare8"></div><br><br><br><br><br><br>
+    <div class="chesssquare9"></div>
+    <div class="chesssquare10"></div>
+    <div class="chesssquare11"></div>
+    <div class="chesssquare12"></div>
+    <div class="chesssquare13"></div>
+    <div class="chesssquare14"></div>
+    <div class="chesssquare15"></div>
+    <div class="chesssquare16"></div><br><br><br><br><br><br>
+    <div class="chesssquare1"></div>
+    <div class="chesssquare2"></div>
+    <div class="chesssquare3"></div>
+    <div class="chesssquare4"></div>
+    <div class="chesssquare5"></div>
+    <div class="chesssquare6"></div>
+    <div class="chesssquare7"></div>
+    <div class="chesssquare8"></div><br><br><br><br><br><br>
+    <div class="chesssquare9"></div>
+    <div class="chesssquare10"></div>
+    <div class="chesssquare11"></div>
+    <div class="chesssquare12"></div>
+    <div class="chesssquare13"></div>
+    <div class="chesssquare14"></div>
+    <div class="chesssquare15"></div>
+    <div class="chesssquare16"></div><br><br><br><br><br><br>
+    <div class="chesssquare1">
+        <div class="white2">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare2">
+        <div class="white2">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare3">
+        <div class="white2">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare4">
+        <div class="white2">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare5">
+        <div class="white2">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare6">
+        <div class="white2">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare7">
+        <div class="white2">
+            <h1>P</h1>
+        </div>
+    </div>
+    <div class="chesssquare8">
+        <div class="white2">
+            <h1>P</h1>
+        </div>
+    </div><br><br><br><br><br><br>
+    <div class="chesssquare9">
+        <div class="piecelargewhiteone">
+            <h1>R</h1>
+            </h1>
+        </div>
+    </div>
+    <div class="chesssquare10">
+        <div class="piecelargewhiteone">
+            <h1>Kn</h1>
+            </h1>
+        </div>
+    </div>
+    <div class="chesssquare11">
+        <div class="piecelargewhiteone">
+            <h1>B</h1>
+            </h1>
+        </div>
+    </div>
+    <div class="chesssquare12">
+        <div class="piecelargewhiteone">
+            <h1>Q</h1>
+            </h1>
+        </div>
+    </div>
+    <div class="chesssquare13">
+        <div class="piecelargewhiteone">
+            <h1>K</h1>
+            </h1>
+        </div>
+    </div>
+    <div class="chesssquare14">
+        <div class="piecelargewhiteone">
+            <h1>B</h1>
+            </h1>
+        </div>
+    </div>
+    <div class="chesssquare15">
+        <div class="piecelargewhiteone">
+            <h1>Kn</h1>
+            </h1>
+        </div>
+    </div>
+    <div class="chesssquare16">
+        <div class="piecelargewhiteone">
+            <h1>R</h1>
+            </h1>
+        </div>
+    </div><br><br><br><br><br><br>
+    
+</body>
+
+</html>
